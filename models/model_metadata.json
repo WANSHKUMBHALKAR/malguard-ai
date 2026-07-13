@@ -1,0 +1,226 @@
+{
+    "best_model_name": "Gradient Boosting",
+    "features": [
+        "file_size",
+        "entropy",
+        "num_sections",
+        "num_imported_dlls",
+        "num_imported_apis",
+        "compile_timestamp",
+        "has_suspicious_apis",
+        "has_suspicious_sections"
+    ],
+    "feature_importance": {
+        "file_size": 0.1661992486893142,
+        "entropy": 0.2236561626881146,
+        "num_sections": 0.06731088405946666,
+        "num_imported_dlls": 0.13929059622538323,
+        "num_imported_apis": 0.10464758555841092,
+        "compile_timestamp": 0.07162273769126763,
+        "has_suspicious_apis": 0.21174037949690824,
+        "has_suspicious_sections": 0.015532405591134594
+    },
+    "metrics": {
+        "accuracy": 0.9159698143993473,
+        "precision": 0.9155247141487773,
+        "recall": 0.9159698143993473,
+        "f1_score": 0.9150412971048437,
+        "classification_report": {
+            "Benign": {
+                "precision": 0.9808764940239044,
+                "recall": 0.9824421388667198,
+                "f1-score": 0.981658692185008,
+                "support": 1253.0
+            },
+            "Trojan": {
+                "precision": 0.9685990338164251,
+                "recall": 0.9876847290640394,
+                "f1-score": 0.9780487804878049,
+                "support": 406.0
+            },
+            "Worm": {
+                "precision": 0.8461538461538461,
+                "recall": 0.8691358024691358,
+                "f1-score": 0.8574908647990256,
+                "support": 405.0
+            },
+            "Spyware": {
+                "precision": 0.7844611528822055,
+                "recall": 0.7728395061728395,
+                "f1-score": 0.7786069651741293,
+                "support": 405.0
+            },
+            "Ransomware": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 406.0
+            },
+            "Adware": {
+                "precision": 0.8314285714285714,
+                "recall": 0.7167487684729064,
+                "f1-score": 0.7698412698412699,
+                "support": 406.0
+            },
+            "Backdoor": {
+                "precision": 0.8195652173913044,
+                "recall": 0.9285714285714286,
+                "f1-score": 0.8706697459584296,
+                "support": 406.0
+            },
+            "Downloader": {
+                "precision": 0.9950617283950617,
+                "recall": 0.9950617283950617,
+                "f1-score": 0.9950617283950617,
+                "support": 405.0
+            },
+            "Cryptominer": {
+                "precision": 0.9636803874092009,
+                "recall": 0.9802955665024631,
+                "f1-score": 0.9719169719169719,
+                "support": 406.0
+            },
+            "Botnet": {
+                "precision": 0.8285714285714286,
+                "recall": 0.7876543209876543,
+                "f1-score": 0.8075949367088607,
+                "support": 405.0
+            },
+            "accuracy": 0.9159698143993473,
+            "macro avg": {
+                "precision": 0.9018397860071949,
+                "recall": 0.9020433989502248,
+                "f1-score": 0.9010889955466561,
+                "support": 4903.0
+            },
+            "weighted avg": {
+                "precision": 0.9155247141487773,
+                "recall": 0.9159698143993473,
+                "f1-score": 0.9150412971048437,
+                "support": 4903.0
+            }
+        },
+        "confusion_matrix": [
+            [
+                1231,
+                2,
+                6,
+                1,
+                0,
+                4,
+                0,
+                0,
+                1,
+                8
+            ],
+            [
+                1,
+                401,
+                0,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                5,
+                4,
+                352,
+                20,
+                0,
+                9,
+                6,
+                0,
+                2,
+                7
+            ],
+            [
+                0,
+                4,
+                23,
+                313,
+                0,
+                36,
+                8,
+                0,
+                4,
+                17
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                406,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                11,
+                0,
+                23,
+                41,
+                0,
+                291,
+                15,
+                0,
+                8,
+                17
+            ],
+            [
+                0,
+                2,
+                4,
+                5,
+                0,
+                1,
+                377,
+                0,
+                0,
+                17
+            ],
+            [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                403,
+                0,
+                0
+            ],
+            [
+                0,
+                1,
+                2,
+                2,
+                0,
+                1,
+                0,
+                2,
+                398,
+                0
+            ],
+            [
+                5,
+                0,
+                6,
+                13,
+                0,
+                8,
+                54,
+                0,
+                0,
+                319
+            ]
+        ]
+    }
+}
